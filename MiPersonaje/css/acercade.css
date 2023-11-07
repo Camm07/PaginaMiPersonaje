@@ -1,0 +1,559 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    /* Color de fondo general de la página */
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 10px;
+}
+
+
+
+header {
+    background-color: #D50A0A;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    /* Esto pondrá el texto en negritas */
+}
+
+
+#logo {
+    width: 100px;
+    align-self: flex-start;
+}
+
+#Encabezado {
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #002244;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    /* Es posible que necesites ajustar el padding o el margin de la etiqueta nav si tienes una barra de navegación */
+    padding: 10px 0;
+    /* Agregado como ejemplo */
+}
+
+nav a {
+    text-decoration: none;
+    color: #A5ACAF;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    /* Suaviza la transición del cambio de color */
+}
+
+nav a:hover {
+    background-color: #324A5E;
+    /* Un azul más claro que el fondo de navegación pero que aún combina */
+    color: #E0E6ED;
+    /* Un color claro que contrasta bien con el nuevo fondo del hover */
+    border-radius: 5px;
+    /* Si quieres bordes redondeados en el hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+
+main {
+    background: #fff;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Reset básico para estilos de navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aplicamos fuente general y colores */
+
+
+#logo {
+    width: 100px;
+    /* Ajusta esto según el tamaño real de tu logo */
+}
+
+#Encabezado {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilización de la navegación */
+nav {
+    background-color: #002244;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #A5ACAF;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #324A5E;
+    color: #E0E6ED;
+    border-radius: 5px;
+}
+
+/* Estilos para la sección principal */
+
+
+#p1, #pa1 {
+    text-align: justify;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #FFFFFF;
+}
+
+
+.section {
+    background: #002244;
+    margin-bottom: 10px;
+    /* Añade espacio entre secciones */
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra suave para las secciones */
+    width: 75%;
+    /* Ajusta el ancho de la sección según tus necesidades */
+    padding: 20px;
+    display: flex;
+    /* Habilita Flexbox */
+    align-items: center;
+    /* Alinea verticalmente */
+    justify-content: space-between;
+    /* Espacio entre el texto y la imagen */
+}
+
+.text-container {
+    flex: 1;
+    /* Ocupa el espacio disponible */
+    margin-right: 20px;
+    /* Añade espacio entre el texto y la imagen */
+    text-align: justify;
+    /* Justifica el texto */
+}
+
+.image-container {
+    flex: 0 0 50%;
+    /* Ocupa hasta el 50% de la sección, sin crecer ni encoger */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 300px) {
+
+    /* Adaptaciones para dispositivos móviles */
+    .section {
+        flex-direction: column;
+        /* Apila verticalmente en móviles */
+        width: 95%;
+    }
+
+    .text-container,
+    .image-container {
+        margin-right: 0;
+        /* Elimina el margen derecho en móviles */
+        flex: 0 0 auto;
+        /* Resetear la flexibilidad */
+    }
+
+    .image-container {
+        width: 100%;
+        /* La imagen ocupa todo el ancho en móviles */
+        margin-top: 20px;
+        /* Añade espacio sobre la imagen */
+    }
+}
+
+.section-reverse {
+    flex-direction: row-reverse;
+    /* Invierte el orden de los elementos para dispositivos con pantalla ancha */
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adaptaciones para dispositivos móviles */
+    .section-reverse {
+        flex-direction: column-reverse;
+        /* Invierte el orden de los elementos apilados en dispositivos móviles */
+    }
+}
+
+.text-container {
+    margin-right: 20px;
+    /* Añade un margen a la derecha del texto */
+}
+
+.image-container {
+    margin-left: 20px;
+    /* Añade un margen a la izquierda de la imagen */
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adaptaciones para dispositivos móviles */
+    .text-container,
+    .image-container {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        /* Añade un margen abajo cuando están apilados */
+    }
+
+    .section-reverse .text-container {
+
+        order: 1;
+        /* Asegura que el texto viene primero al apilar */
+    }
+
+    .section-reverse .image-container {
+        order: 2;
+        /* Asegura que la imagen viene después del texto al apilar */
+    }
+}
+
+.section-reverse .text-container {
+    /* Esto aplica si deseas que el texto esté a la derecha */
+    margin-left: 20px;
+    /* Añade un margen a la izquierda del texto */
+}
+
+.section-reverse .image-container {
+    /* Esto aplica si deseas que la imagen esté a la izquierda */
+    margin-right: 20px;
+    /* Añade un margen a la derecha de la imagen */
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adaptaciones para dispositivos móviles */
+    .section-reverse .text-container,
+    .section-reverse .image-container {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        /* Añade un margen abajo cuando están apilados */
+    }
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* Centra el botón horizontalmente */
+    align-items: center;
+    /* Centra el botón verticalmente si el contenedor tiene altura definida */
+}
+
+button {
+    margin: 35px;
+    display: flex;
+    height: 2.5em;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #D50A0A;
+    font-size: 1.2em;
+    /* Aumenta el tamaño de la fuente */
+    text-decoration: none;
+    /* Esto es para evitar cualquier subrayado por defecto */
+    color: #FFFFFF;
+    /* Esto establece el color del texto, elige uno que se adapte a tu diseño */
+}
+
+.button-estilo-1>svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: all 0.4s ease-in;
+    color: #FFFFFF;
+
+}
+
+.button-estilo-1:hover>svg {
+    transform: translateX(-10px);
+}
+
+.button-estilo-1:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-10px);
+}
+
+.button-estilo-1>span {
+    text-decoration: none;
+    /* Esto asegura que no haya subrayado en el texto dentro del botón */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
+    /* Aumentado de 80% a 90% */
+    background-color: #002244;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.message {
+    color: #355891;
+    font-size: 14px;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #355891;
+    border-radius: 5px;
+}
+
+#apellido,
+#nombre {
+    width: 50%;
+}
+
+
+
+
+.form label .input+span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #355891;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid+span {
+    color: green;
+}
+
+.input01 {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #355891;
+    border-radius: 5px;
+}
+
+.form label .input01+span {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    color: #355891;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input01:placeholder-shown+span {
+    top: 40px;
+    font-size: 0.9em;
+}
+
+.form label .input01:focus+span,
+.form label .input01:valid+span {
+    top: 50px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input01:valid+span {
+    color: green;
+}
+
+.fancy {
+    background-color: white;
+    border: 2px solid #355891;
+    border-radius: 0px;
+    box-sizing: border-box;
+    color: #355891;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 390;
+    letter-spacing: 2px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 8px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+}
+
+.fancy::before {
+    content: " ";
+    width: 1.7rem;
+    height: 2px;
+    background: #355891;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform: translateX(230%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #355891;
+    transform: translateX(30%);
+}
+
+.fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+    color: #355891;
+    background: #5f82a9;
+}
+
+.fancy:hover::before {
+    width: 1.5rem;
+    background: #355891;
+}
+
+.fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+}
+
+/* Estilos CSS para el footer */
+footer {
+    background-color: #424242;
+    color: #A5ACAF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}

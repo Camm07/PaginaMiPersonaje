@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    /* Color de fondo general de la página */
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 10px;
+}
+
+header {
+    background-color: #D50A0A;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#logo {
+    width: 100px;
+    align-self: flex-start;
+}
+
+#Encabezado {
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+#featured-video {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+ 
+
+
+
+nav {
+    background-color: #002244;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    /* Establece el tamaño de la fuente */
+    font-weight: bold;
+    /* Establece la fuente en negrita */
+}
+
+nav a {
+    text-decoration: none;
+    color: #A5ACAF;
+    margin: 0 10px;
+    /* dar espacio entre los enlaces */
+    padding: 5px 10px;
+    /* Agregado para dar un toque de padding a los enlaces y hacer el hover más atractivo */
+}
+
+nav a:hover {
+    background-color: #324A5E; /* Un azul más claro que el fondo de navegación pero que aún combina */
+    color: #E0E6ED; /* Un color claro que contrasta bien con el nuevo fondo del hover */
+    border-radius: 5px; /* Si quieres bordes redondeados en el hover */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+h2 {
+    background-color: #002244;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+}
+
+.video-box {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #002244; /* Color de fondo del marco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 25px; /* Aumenta el padding para un marco más visible */
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px; /* Bordes redondeados para el marco */
+}
+
+.video-box::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-bottom: 56.25%; /* Relación de aspecto de 16:9 */
+    background-color: #2e4a7d; /* Color de fondo detrás del video */
+}
+
+iframe, video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center; /* Centra el botón verticalmente si el contenedor tiene altura definida */
+}
+
+button {
+    margin: 35px;
+    display: flex;
+    height: 2.5em;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #D50A0A;
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    text-decoration: none; /* Esto es para evitar cualquier subrayado por defecto */
+    color: #FFFFFF; /* Esto establece el color del texto, elige uno que se adapte a tu diseño */
+}
+
+button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: all 0.4s ease-in;
+    color: #FFFFFF;
+    
+}
+
+button:hover > svg {
+    transform: translateX(-10px);
+}
+
+button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-10px);
+}
+
+button > span {
+    text-decoration: none; /* Esto asegura que no haya subrayado en el texto dentro del botón */
+}
+
+
+footer {
+    background-color: #424242;
+    color: #A5ACAF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}

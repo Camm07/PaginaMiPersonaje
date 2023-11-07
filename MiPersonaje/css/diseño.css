@@ -1,0 +1,413 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    /* Color de fondo general de la página */
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 10px;
+}
+
+header {
+    background-color: #D50A0A;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    /* Esto pondrá el texto en negritas */
+}
+
+main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#logo {
+    width: 100px;
+    align-self: flex-start;
+}
+
+#Encabezado {
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* When you change the amount of characters in the h1, you have to change 
+  the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
+  if there is 20 put 20 */
+.animation {
+    font: bold 42px 'Roboto', sans-serif;
+    border-right: .1em solid black;
+    width: 13.20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 5s steps(13, end),
+        blink-caret .5s step-end infinite alternate;
+}
+
+nav {
+    background-color: #002244;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    /* Es posible que necesites ajustar el padding o el margin de la etiqueta nav si tienes una barra de navegación */
+    padding: 10px 0;
+    /* Agregado como ejemplo */
+}
+
+nav a {
+    text-decoration: none;
+    color: #A5ACAF;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    /* Suaviza la transición del cambio de color */
+}
+
+/* Estado hover para los enlaces */
+nav a:hover {
+    background-color: #324A5E;
+    /* Un azul más claro que el fondo de navegación pero que aún combina */
+    color: #E0E6ED;
+    /* Un color claro que contrasta bien con el nuevo fondo del hover */
+    border-radius: 5px;
+    /* Si quieres bordes redondeados en el hover */
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    flex: 70%;
+    padding: 30px;
+    /* Agregado para dar espacio en el contenido principal */
+}
+
+#biografia {
+    padding: 20px;
+}
+
+#bio {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+    font-size: 18px;
+    margin-right: 70px;
+    /* Ajusta este valor según la separación que desees */
+    margin-top: -10px;
+}
+
+
+article {
+    display: flex;
+    align-items: flex-start;
+    /* Alinea el contenido y la imagen en la parte superior */
+}
+
+.contenedor {
+    flex: 2;
+    /* Esto da más espacio al contenido que a la imagen */
+    padding-right: 20px;
+    /* Espacio entre el contenido y la imagen */
+}
+
+.imagenContenedor {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea la imagen a la derecha */
+}
+
+#imgBio {
+    width: 100%;
+    max-width: 500px;
+    /* Puedes ajustar este valor según lo que necesites */
+    margin-top: -50px;
+}
+
+#logros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#parrafoLog {
+    margin-bottom: 20px;
+    text-align: center;
+    /* Centramos el título "Logros" */
+
+}
+
+.imagenContenedorlog {
+    margin-right: 30px;
+    /* Separación entre la imagen y el texto */
+    margin-top: -45px;
+    flex-shrink: 0;
+    /* Evita que la imagen se reduzca */
+}
+
+.contenedorLog {
+    display: flex;
+    /* Hacemos que el contenido dentro de este contenedor se muestre en línea */
+    flex-direction: column;
+    /* Acomodamos los elementos en una columna */
+    text-align: justify;
+    /* Justificación del texto */
+    width: 70%;
+    /* Puedes ajustar esto según lo necesites */
+}
+
+#log {
+    text-align: justify;
+    /* Justificación del texto */
+    text-justify: inter-word;
+    /* Esto mejora la justificación para evitar grandes espacios entre palabras */
+    margin-bottom: 20px;
+
+    list-style-type: disc;
+    margin-top: 0;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+#log li {
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+article {
+    display: flex;
+    /* Hacemos que la imagen y el contenedor del texto se muestren en línea */
+    align-items: center;
+    /* Alineamos verticalmente los elementos en el centro */
+    justify-content: center;
+    /* Alineamos horizontalmente los elementos en el centro */
+}
+
+
+
+.cta {
+    display: flex;
+    padding: 11px 33px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    /* Cambiado de Poppins a Montserrat */
+    font-size: 25px;
+    color: white;
+    background: #002244;
+    /* Ajustado al color de fondo principal */
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    border: none;
+    text-decoration: none;
+}
+
+.cta:focus {
+    outline: none;
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #D4D9DD;
+    /* Ajustado al color claro de la paleta */
+}
+
+.cta .second {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover .second {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+.span {
+    transform: skewX(15deg)
+}
+
+.second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+
+.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: #324A5E;
+        /* Ajustado al color secundario de la paleta */
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+
+
+
+
+#Sfrase,
+#DatosC,
+#Estadísticas,
+#Frases {
+    background-color: #002244;
+}
+
+
+
+#EstaTom,
+#DatosTom {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    /* Tamaño del texto */
+    color: #ffffff;
+    /* Color del texto, puedes cambiarlo según el diseño de tu página */
+    text-align: left;
+    /* Centrar la frase */
+    margin: 20px 0;
+    /* Espaciado superior e inferior */
+    margin-left: auto;
+    /* Centrar horizontalmente */
+    margin-right: auto;
+    /* Centrar horizontalmente */
+
+}
+
+#asiFrase,
+#asiEstadisticas,
+#asiDatos {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    /* Bold */
+    font-size: 30px;
+    /* Tamaño del texto */
+    color: #ffffff;
+    /* Color del texto, puedes cambiarlo según el diseño de tu página */
+    text-align: center;
+    /* Centrar la frase */
+    margin: 20px 0;
+    /* Espaciado superior e inferior */
+    margin-left: auto;
+    /* Centrar horizontalmente */
+    margin-right: auto;
+    /* Centrar horizontalmente */
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    /* Tamaño del texto */
+    color: #ffffff;
+    /* Color del texto, puedes cambiarlo según el diseño de tu página */
+    text-align: left;
+    /* Centrar la frase */
+    margin-bottom: 10px;
+}
+
+.contenedorAsides {
+    display: flex;
+    justify-content: space-between;
+    /* Esto distribuirá equitativamente el espacio entre los asides */
+}
+
+aside {
+    flex: 1;
+    /* Esto hará que cada aside ocupe un tercio del contenedor */
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    padding: 5px;
+    /* Puedes ajustar el padding según tus necesidades */
+    margin: 5px;
+}
+
+
+footer {
+    background-color: #424242;
+    color: #A5ACAF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}

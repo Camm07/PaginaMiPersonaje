@@ -1,0 +1,12 @@
+html{
+    font-family: 'League Gothic',sans-serif;
+    font-size: large;
+}
+
+h2{
+    color: beige;
+    background-color: black;
+    padding: 60px;
+    border: 20px solid;
+    margin: 30;
+}

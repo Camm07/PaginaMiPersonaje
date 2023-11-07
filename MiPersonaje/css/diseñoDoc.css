@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    /* Color de fondo general de la página */
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 10px;
+}
+
+header {
+    background-color: #D50A0A;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: bold; /* Esto pondrá el texto en negritas */
+}
+
+#logo {
+    width: 100px;
+    align-self: flex-start;
+}
+
+#Encabezado {
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+
+}
+
+            #asiFrase{ 
+                color: #000000; 
+                margin-left: auto;   
+                margin-right: auto; 
+                align-items: center; 
+                text-align: center; 
+            }
+            
+            nav {
+                background-color: #002244;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                /* Establece el tamaño de la fuente */
+                font-weight: bold;
+                /* Establece la fuente en negrita */
+            }
+            
+            nav a {
+                text-decoration: none;
+                color: #A5ACAF;
+                margin: 0 10px;
+                /* dar espacio entre los enlaces */
+                padding: 5px 10px;
+                /* Agregado para dar un toque de padding a los enlaces y hacer el hover más atractivo */
+            }
+            
+            nav a:hover {
+                background-color: #324A5E; /* Un azul más claro que el fondo de navegación pero que aún combina */
+                color: #E0E6ED; /* Un color claro que contrasta bien con el nuevo fondo del hover */
+                border-radius: 5px; /* Si quieres bordes redondeados en el hover */
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            
+            table td {
+                text-align: center;
+                padding: 10px 20px;
+            }
+            
+            main {
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Open Sans', sans-serif;
+                
+            }
+
+            
+            .song-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+                grid-gap: 20px; /* Espacio entre tarjetas */
+                margin: 0 auto; /* Centrado y espacio en los lados */
+                max-width: 1200px; /* Ancho máximo para el contenedor */
+                padding: 20px; /* Espacio dentro del contenedor */
+            }
+
+           /* Sección de canciones */
+           .song-card {
+            background-color: #002244;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .song-card img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .song-info {
+            flex: 1;
+            padding-right: 10px;
+        }
+        
+        .song-card h2 {
+            font-size: 18px;
+            margin: 0 0 10px;
+            color: #e22c2c; /* Ajusta el color según necesites */
+            
+        }
+        
+        .song-card p {
+            margin: 0;
+            font-size: 16px;
+            color: #ffffff; /* Ajusta el color según necesites */
+            text-align: justify;
+        }
+        
+        .song-card audio {
+            width: 30%; /* Ajusta según necesites */
+        }
+
+        section{
+            padding-bottom: 10%;
+        }
+
+        #button-container {
+            display: flex;
+            justify-content: center; /* Centra el botón horizontalmente */
+            align-items: center; /* Centra el botón verticalmente si el contenedor tiene altura definida */
+        }
+        
+        button {
+            margin: 35px;
+            display: flex;
+            height: 2.5em;
+            width: 180px;
+            align-items: center;
+            justify-content: center;
+            background-color: #FFFFFF;
+            border-radius: 3px;
+            letter-spacing: 1px;
+            transition: all 0.2s linear;
+            cursor: pointer;
+            border: none;
+            background: #D50A0A;
+            font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+            text-decoration: none; /* Esto es para evitar cualquier subrayado por defecto */
+            color: #FFFFFF; /* Esto establece el color del texto, elige uno que se adapte a tu diseño */
+            margin-left: auto; /* Esto empujará el botón hacia la derecha */
+            margin-right: -380px;
+        }
+        
+        button > svg {
+            margin-right: 5px;
+            margin-left: 5px;
+            transition: all 0.4s ease-in;
+            color: #FFFFFF;
+            
+        }
+        
+        button:hover > svg {
+            transform: translateX(-10px);
+        }
+        
+        button:hover {
+            box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+            transform: translateY(-10px);
+        }
+        
+        button > span {
+            text-decoration: none; /* Esto asegura que no haya subrayado en el texto dentro del botón */
+        }
+
+        footer {
+            background-color: #424242;
+            color: #A5ACAF;
+            text-align: center;
+        }
+        

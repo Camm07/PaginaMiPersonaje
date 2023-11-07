@@ -1,0 +1,181 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    /* Color de fondo general de la página */
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 10px;
+}
+
+header {
+    background-color: #D50A0A;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#logo {
+    width: 100px;
+    align-self: flex-start;
+}
+
+#Encabezado {
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+
+            #asiFrase{ 
+                color: #000000; 
+                margin-left: auto;   
+                margin-right: auto; 
+                align-items: center; 
+                text-align: center; 
+            }
+            
+            nav {
+                background-color: #002244;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                /* Establece el tamaño de la fuente */
+                font-weight: bold;
+                /* Establece la fuente en negrita */
+            }
+            
+            nav a {
+                text-decoration: none;
+                color: #A5ACAF;
+                margin: 0 10px;
+                /* dar espacio entre los enlaces */
+                padding: 5px 10px;
+                /* Agregado para dar un toque de padding a los enlaces y hacer el hover más atractivo */
+            }
+            
+            nav a:hover {
+                background-color: #324A5E; /* Un azul más claro que el fondo de navegación pero que aún combina */
+                color: #E0E6ED; /* Un color claro que contrasta bien con el nuevo fondo del hover */
+                border-radius: 5px; /* Si quieres bordes redondeados en el hover */
+            }
+            
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            
+            table td {
+                text-align: center;
+                padding: 10px 20px;
+            }
+            
+            main {
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Open Sans', sans-serif;
+                
+            }
+            h1 {
+                text-align: center;
+                width: 100%;
+                padding: 10px;
+            }
+
+            
+            section{
+                border: 1px solid;
+                padding: 20px;
+                margin: 10px;
+                flex: 1;
+                background-color: #002244;
+            }
+
+
+            .tomGal {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                justify-items: center;
+            }
+            
+            .columna img {
+                max-width: 100%;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+                width: 600px;
+                height: 300px;
+                display: block;
+                object-fit: cover; 
+            }
+            
+            .columna:hover img {
+                transform: scale(1.05);
+            }
+
+            /* Estilos para el contenedor del botón si necesitas uno */
+#button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center; /* Centra el botón verticalmente si el contenedor tiene altura definida */
+}
+
+button {
+    margin: 35px;
+    display: flex;
+    height: 2.5em;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #D50A0A;
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    text-decoration: none; /* Esto es para evitar cualquier subrayado por defecto */
+    color: #FFFFFF; /* Esto establece el color del texto, elige uno que se adapte a tu diseño */
+}
+
+button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: all 0.4s ease-in;
+    color: #FFFFFF;
+    
+}
+
+button:hover > svg {
+    transform: translateX(-10px);
+}
+
+button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-10px);
+}
+
+button > span {
+    text-decoration: none; /* Esto asegura que no haya subrayado en el texto dentro del botón */
+}
+    
+
+            
+         
+
+footer {
+    background-color: #424242;
+    color: #A5ACAF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
